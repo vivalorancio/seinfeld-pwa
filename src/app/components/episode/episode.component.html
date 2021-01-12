@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div *ngIf="episode" class="row">
+    <div class="col-md-9">
+      <p><strong>Title:</strong> {{ episode.name }}</p>
+      <p><strong>Season:</strong> {{ episode.season }}</p>
+      <p><strong>Episode:</strong> {{ episode.number }}</p>
+      <p>
+        <strong>Summary:</strong> <span [innerHTML]="episode.summary"></span>
+      </p>
+      <img
+        style="width: 80%; height: 80%"
+        class="rounded"
+        src="{{ episode.image.original }}"
+        alt=""
+      />
+    </div>
+
+    <div class="col-md-3">
+      <a routerLink="/" class="btn btn-danger">Back</a>
+    </div>
+  </div>
+</div>
