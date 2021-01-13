@@ -10,10 +10,12 @@ export class EpisodesService {
   constructor(private http: HttpClient) {}
 
   getAllEpisodes(): Observable<Episode[]> {
-    return this.http.get<Episode[]>("http://api.tvmaze.com/shows/530/episodes");
+    return this.http.get<Episode[]>(
+      "https://api.tvmaze.com/shows/530/episodes"
+    );
   }
 
   getEpisodeById(id: String): Observable<Episode> {
-    return this.http.get<Episode>("http://api.tvmaze.com/episodes/" + id);
+    return this.http.get<Episode>("https://api.tvmaze.com/episodes/" + id);
   }
 }

@@ -34,8 +34,8 @@
     {
       "name": "episodes-api",
       "urls": [
-        "http://api.tvmaze.com/shows/530/episodes",
-        "http://api.tvmaze.com/episodes/**"
+        "https://api.tvmaze.com/shows/530/episodes",
+        "https://api.tvmaze.com/episodes/**"
       ],
       "cacheConfig": {
         "maxSize": 30,
